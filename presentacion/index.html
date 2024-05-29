@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal</title>
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../presentacion/css/styles.css">
+</head>
+<body>
+   
+    <header>
+        <div class="encabezado">
+            <img src="../presentacion/img/imagen4.png" alt="Logo"> <!-- Ruta de  imagen -->
+        </div>
+        
+        <h1>Raúl Hernández Chaires</h1>
+        <p>Estudiante de Ingeniería en Software y Arte y Patrimonio Cultural</p>
+       
+    </header>
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#galeria">Galería de Arte</a>
+        <a href="#gustos">Gustos Personales</a>
+        <a href="#contacto">Contacto y Redes Sociales</a>
+    </nav>
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Me presento, mi nombre es Raúl Hernández Chaires. Soy estudiante de la carrera de Ingeniería en Software con un fuerte interés en el dibujo artístico, la inteligencia artificial y la investigación sobre las neuronas. Actualmente, también estoy cursando una segunda carrera en Arte y Patrimonio Cultural.</p>
+            <a href="#">Volver al inicio</a>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos y Trabajos</h2>
+            <p>Tengo un gran interés en el desarrollo web, y manejo varios lenguajes de programación. Aquí algunos de mis proyectos destacados:</p>
+            <ul>
+                <li><strong>Proyecto de Desarrollo Web:</strong> Desarrollo de controlares por medio de una página web.</li>
+                <li><strong>Aplicación de IA:</strong> Recientemente estoy desarrollando un sistema para detección de manos.</li>
+                <li><strong>Investigación sobre Neuronas:</strong> He llevado a cabo una investigación sobre neuronas espejo en la UACM.</li>
+            </ul>
+            <h3>Lenguajes de Programación que Domino</h3>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>C</li>
+            </ul>
+            <a href="#">Volver al inicio</a>
+        </section>
+        <section id="galeria">
+            <h2>Galería de Arte</h2>
+            <div class="gallery slider">
+                <div><img src="../presentacion/img/imagen1.jpg" alt="Dibujo 1"></div>
+                <div><img src="../presentacion/img/imagen2.jpg" alt="Dibujo 2"></div>
+                <div><img src="../presentacion/img/imagen3.jpg" alt="Dibujo 3"></div>
+                <!-- Añade más imágenes según sea necesario -->
+            </div>
+            <a href="#">Volver al inicio</a>
+        </section>
+        <section id="gustos">
+            <h2>Gustos Personales</h2>
+            <p>Una de mis cantantes favoritas es ZAZ. Admiro su música y su estilo único.</p>
+            <p>Gusto por la investigación en neurociencia.</p>
+            <a href="#">Volver al inicio</a>
+        </section>
+        <section id="contacto">
+            <h2>Contacto y Redes Sociales</h2>
+            <div class="container">
+                <p class="text">Si deseas ponerte en contacto conmigo, puedes enviarme un correo a: <a href="mailto:luarartesoftware@gmail.com">luarartesoftware@gmail.com</a></p>
+                <img src="../presentacion/img/google.png" alt="simbolo1" class="logo">
+            </div>
+            <div class="container">
+                <p class="text">También puedes mandarme un WhatsApp a:</p>
+                <img src="../presentacion/img/telefono.png" alt="simbolo" class="logo">
+                <p class="link"><a href="https://wa.me/525528110039" target="_blank">5528110039</a></p>
+            </div>
+            <div class="container">
+                <p class="text">Sígueme en mis redes sociales:</p>
+                <img src="../presentacion/img/facebook.png" alt="simbolo" class="logo">
+                <ul>
+                    <li><a href="https://facebook.com/profile.php?id=61560253742341" target="_blank">Raul Chaires</a></li>
+                </ul>
+            </div>
+            <a href="#">Volver al inicio</a>
+        </section>
+        <section id="quejas-sugerencias">
+            <h2>Quejas y Sugerencias</h2>
+            <p>¿Tienes alguna queja o sugerencia sobre mi página personal? ¡Déjame saber! Tu opinión es importante para mí.</p>
+            <form action="../presentacion/php/sugerencias.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <a href="#">Volver al inicio</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Raúl Hernández Chaires</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+            
+            // Script de JavaScript para manejar la búsqueda de palabras clave
+            var searchInput = document.getElementById("search-input");
+            var searchButton = document.getElementById("search-button");
+            var searchResults = document.getElementById("search-results");
+
+            function buscarPalabras() {
+                var inputValue = searchInput.value.trim().toLowerCase();
+                searchResults.innerHTML = ""; // Limpiar resultados anteriores
+                if (inputValue.length > 0) {
+                    // Realizar búsqueda y mostrar resultados
+                    var palabras = ["manzana", "banana", "pera", "naranja", "uva"]; // Ejemplo de palabras
+                    var resultados = palabras.filter(function(palabra) {
+                        return palabra.toLowerCase().includes(inputValue);
+                    });
+                    resultados.forEach(function(resultado) {
+                        var li = document.createElement("li");
+                        li.textContent = resultado;
+                        li.addEventListener("click", function() {
+                            searchInput.value = resultado;
+                            searchResults.innerHTML = ""; // Limpiar resultados al seleccionar uno
+                        });
+                        searchResults.appendChild(li);
+                    });
+                }
+            }
+
+            // Realizar búsqueda al hacer clic en el botón de búsqueda
+            searchButton.addEventListener("click", function(event) {
+                event.preventDefault(); // Evitar enviar el formulario
+                buscarPalabras();
+            });
+
+            // Realizar búsqueda al enviar el formulario
+            document.getElementById("search-form").addEventListener("submit", function(event) {
+                event.preventDefault(); // Evitar enviar el formulario
+                buscarPalabras();
+            });
+
+            // Cerrar resultados al hacer clic fuera del campo de búsqueda
+            document.addEventListener("click", function(event) {
+                if (event.target !== searchInput && event.target !== searchResults) {
+                    searchResults.innerHTML = "";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
